@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+
+
+  <body>
+    <h1>Hello World!</h1>
+    We are using Node.js <span id="node-version"></span>, Chromium
+    <span id="chrome-version"></span>, and Electron
+    <span id="electron-version"></span>.
+
+    <main>
+      <section id="header">
+        <h1>Meine Testanwendungen</h1>
+        <h3>Codeprobleme demos</h3>
+      </section>
+      <section id="button-area">
+        <div><a href="../pages/waehrungsrechner.html">Währungsumrechner</a></div>
+        <div><a href="../pages/waehrungsrechner.html">FizzBuzz</a></div>
+        <div><a href="../pages/waehrungsrechner.html">Todo-Liste</a></div>
+        <div><a href="../pages/waehrungsrechner.html">placeholder</a></div>
+      </section>
+    </main>
+    <script src="../code/index.js"></script>
+  </body>
+</html>

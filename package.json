@@ -1,0 +1,14 @@
+{
+  "name": "my-electron-app",
+  "version": "1.0.0",
+  "description": "python electron programming demo",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Kacper Coemlek",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^13.2.2"
+  }
+}

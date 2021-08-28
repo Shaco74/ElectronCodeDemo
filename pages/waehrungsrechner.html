@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+
+
+  </head>
+
+
+  <body>
+    <main class="flex-container-vertical">
+      <div class="backarrow"><a href="../pages/index.html"><img src="../back-button.png" alt="" width="75" height="75"></a></div>
+      <section id="header">
+        <h1>Währungsumrechner</h1>
+        <h3>javascript python demo</h3>
+      </section>
+      <section id="rechner-section">
+        <form id="js-Rechner">
+          <div class="flex-container-vertical">
+          <input type="text" autocomplete="off" id="inputEuro" placeholder="Den Wert in € eintippen">
+          <input type="text" autocomplete="off" id="inputDoller" placeholder="Den Wert om $ eintippen">
+          <input type="submit" value="BERECHNEN">
+          <p id="output"></p>
+        </div>
+        </form>
+
+        <section  id="code-preview">
+          <pre class="prettyprint lang-js">
+const form = document.getElementById('js-Rechner');
+const inputEuro = document.getElementById('inputEuro');
+const inputDoller = document.getElementById('inputDoller');
+const output = document.getElementById('output');
+
+form.addEventListener('submit', (e) => {
+    let messeages = [];
+    if(inputEuro.value != '' && inputDoller.value == ''){
+        var x = (inputEuro.value * 1.18).toFixed(2);
+        x = String(x).concat('$');
+        inputEuro.value = '';
+    }
+    else if(inputDoller.value != '' && inputEuro.value == ''){
+        var x = inputDoller.value * 0.85;
+        x = String(x).concat('€');
+        inputDoller.value = '';
+    }
+    else if(inputDoller.value != '' && inputEuro.value != ''){
+        inputDoller.value = '';
+        inputEuro.value = '';
+        x = "Bitte nur einen Wert gleichzeitig eingeben!"
+    }
+    else{
+        x = "Bitte einen Wert eingeben"
+    }
+    
+    messeages.push(x);
+    e.preventDefault();
+    output.innerText = messeages.join(', ');
+})
+          </pre>
+        </section>
+
+      </section>
+      
+    </main>
+    <script src="../code/waehrung.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  </body>
+</html>

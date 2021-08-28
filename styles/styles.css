@@ -1,0 +1,115 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: darkcyan;
+  color: white;
+  overflow-x: hidden;
+  background-color: tomato;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header {
+  padding: 2vh 0px 2vh 0px;
+  width: 100%;
+  background-color: darkslateblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header h1 {
+  font-size: 2.5rem;
+}
+#header h3 {
+  font-size: 1.25rem;
+}
+
+#button-area {
+  padding-top: 5rem;
+  display: grid;
+  width: 80%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  align-content: space-between;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+#button-area div {
+  background-color: darkslateblue;
+  text-align: center;
+  padding: 5rem;
+  font-size: 2rem;
+}
+
+#button-area div a{
+  color: white;
+  text-decoration: none;
+}
+
+.backarrow{
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}
+
+.flex-container-vertical{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-container-horizontal{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#rechner-section{
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 10fr 3fr 10fr 1fr ;
+  grid-template-rows: 1fr 10fr  1fr;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#js-Rechner {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+#js-Rechner input{
+  height: 3rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#output {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  font-size: 2rem;
+  background-color: black;
+  color: white;
+}
+#code-preview{
+  grid-row: 2 / 3;
+  grid-column: 4 / 5;
+  background-color: white;
+}
+
+#code-preview pre{
+  padding: 2rem;
+  font-size: 1rem;
+}
