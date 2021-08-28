@@ -1,8 +1,9 @@
 # Code Demo Electron
 ## Dependencies
-NodeJS
+-NodeJS
 ```
 npm install
+npm start
 ```
 
 ###### The smallest heading
