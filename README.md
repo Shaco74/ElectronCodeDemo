@@ -1,3 +1,8 @@
 # Code Demo Electron
-## The second largest heading
+## Dependencies
+NodeJS
+```
+npm install
+```
+
 ###### The smallest heading
