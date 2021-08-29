@@ -16,15 +16,20 @@
         <h1>To-do-Liste</h1>
         <h3>javascript To-do-Liste</h3>
       </section>
-      <section id="rechner-section">
-        <form id="js-Rechner">
-          <div class="flex-container-vertical">
-          <input type="text" autocomplete="off" id="inputEuro" placeholder="Den Wert in € eintippen">
-          <input type="text" autocomplete="off" id="inputDoller" placeholder="Den Wert om $ eintippen">
-          <input type="submit" value="BERECHNEN">
-          <p id="output"></p>
-        </div>
-        </form>
+
+        <section class="flex-container-vertical" id="main-section">
+            <section class="demoContent">
+                <form id="todo-form">
+                  <div class="flex-container-vertical">
+                  <input class="input" type="text" id="todo-input" placeholder="neuem Eintrag hinzufügen...">
+                  <input class="input" type="submit"  value="hinzufügen" id="todo-submit">
+                  <div class="flex-container-vertical output-box">
+                    <p class="output">test test</p>
+                  </div>
+                  </div>
+                </form>
+            </section>
+        
 
         <section  id="code-preview">
           <pre class="prettyprint lang-js linenums">
@@ -32,11 +37,11 @@ const form = document.getElementById('js-Rechner');
 
           </pre>
         </section>
-
+      </section>
       </section>
       
     </main>
-    <script src="../code/waehrung.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="../code/todo.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert"></script>
   </body>
 </html>

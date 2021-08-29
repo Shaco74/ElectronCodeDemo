@@ -72,7 +72,7 @@ main {
   align-items: center;
 }
 
-#rechner-section{
+#main-section{
   height: 80vh;
   display: grid;
   grid-template-columns: 1fr 10fr 3fr 10fr 1fr ;
@@ -83,7 +83,10 @@ main {
 ::-webkit-scrollbar {
   display: none;
 }
-
+.demoContent {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
 #js-Rechner {
   grid-row: 2 / 3;
   grid-column: 2 / 3;
@@ -112,4 +115,27 @@ main {
 #code-preview pre{
   padding: 2rem;
   font-size: 1rem;
+}
+
+.input {
+  height: 3rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.demoContent {
+  width: 100%;
+}
+
+.output-box {
+  align-items: center;
+  height: 4rem;
+  background-color: rgb(66, 66, 66);
+  border: 5px solid black;
+}
+
+.output {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
 }
