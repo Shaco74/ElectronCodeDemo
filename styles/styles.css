@@ -103,18 +103,20 @@ main {
   justify-content: center;
   height: 4rem;
   font-size: 2rem;
-  background-color: black;
+  background-color: rgb(66, 66, 66);
   color: white;
 }
 #code-preview{
   grid-row: 2 / 3;
   grid-column: 4 / 5;
   background-color: white;
+  overflow: auto;
 }
 
 #code-preview pre{
   padding: 2rem;
   font-size: 1rem;
+
 }
 
 .input {
@@ -129,13 +131,59 @@ main {
 
 .output-box {
   align-items: center;
-  height: 4rem;
   background-color: rgb(66, 66, 66);
-  border: 5px solid black;
+  height: 4rem;
+
 }
 
 .output {
   font-size: 2rem;
   font-weight: 700;
   color: white;
+}
+
+#todo-list{
+  width: 100%;
+}
+
+.todo{
+  width: 100%;
+  list-style: none;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between ;
+  align-items: center;
+  transition:all 0.4s ease;
+
+}
+.todo li{
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.erledigt {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.todo button{
+  width: 2rem;
+  height: 2rem;
+  place-self:  center;
+  margin: 0.5rem;
+  
+}
+
+.loeschenButton{
+  background-color: red;
+}
+
+.erledigtButton{
+  background-color: green;
+}
+
+.fallen{
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
 }
