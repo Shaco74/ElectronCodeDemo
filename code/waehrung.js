@@ -12,7 +12,7 @@ form.addEventListener('submit', (e) => {
         inputEuro.value = '';
     }
     else if(inputDoller.value && !inputEuro.value ){
-        x = inputDoller.value * 0.85; 
+        x = (inputDoller.value * 0.85).toFixed(2); 
         x = String(x).concat('€');
         inputDoller.value = '';
     }
