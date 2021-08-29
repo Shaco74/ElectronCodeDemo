@@ -5,9 +5,9 @@
 
 body {
   background-color: darkcyan;
-  color: white;
+  color: black;
   overflow-x: hidden;
-  background-color: tomato;
+  background-color: rgb(202, 202, 202);
 }
 
 main {
@@ -19,7 +19,7 @@ main {
 #header {
   padding: 2vh 0px 2vh 0px;
   width: 100%;
-  background-color: darkslateblue;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,7 +44,7 @@ main {
 }
 
 #button-area div {
-  background-color: darkslateblue;
+  background-color: rgb(27, 27, 27);
   text-align: center;
   padding: 5rem;
   font-size: 2rem;
