@@ -8,6 +8,9 @@ sudo apt install nodejs
 ```
 ```
 npm install
+```
+## Launch app
+```
 npm start
 ```
 
